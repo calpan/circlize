@@ -1,7 +1,5 @@
 library(circlize)
 
-par(mar = c(1, 1, 1, 1))
-
 circos.par(cell.padding = c(0, 0, 0, 0))
 circos.initializeWithIdeogram()
 

@@ -5,7 +5,6 @@
 library(circlize)
 
 factors = 1:8
-par(mar = c(1, 1, 1, 1))
 circos.par(start.degree = 22.5, gap.degree = 6)
 circos.initialize(factors = factors, xlim = c(0, 1))
 

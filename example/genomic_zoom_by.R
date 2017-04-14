@@ -14,7 +14,6 @@ bed_zoom = bed[bed[[1]] %in% c("chr7", "chr8"), ]
 bed_zoom[[1]] = paste0(bed_zoom[[1]], "_zoom")
 bed = rbind(bed, bed_zoom)
 
-par(mar = c(1, 1, 1, 1))
 circos.par(start.degree = 90)
 circos.initializeWithIdeogram(df, sort.chr = FALSE, sector.width = c(chr.len/sum(chr.len), 0.5, 0.5))
 circos.genomicTrackPlotRegion(bed, panel.fun = function(region, value, ...) {

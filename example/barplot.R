@@ -9,7 +9,6 @@ Percent = rev(Percent)
 color = rev(color)
 
 library(circlize)
-par(mar = c(1, 1, 1, 1))
 circos.par("start.degree" = 90)
 circos.initialize("a", xlim = c(0, 100)) # 'a` just means there is one sector
 circos.trackPlotRegion(ylim = c(0.5, length(Percent)+0.5), , track.height = 0.8, 

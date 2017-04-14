@@ -1,7 +1,6 @@
 library(circlize)
 
 factors = letters[1]
-par(mar = c(1, 1, 1, 1))
 
 circos.par("gap.degree" = 0, "cell.padding" = c(0, 0, 0, 0), "start.degree" = 90)
 circos.initialize(factors = factors, xlim = c(0, 12))
@@ -33,7 +32,6 @@ circos.clear()
 
 if(0) {
 factors = letters[1]
-par(mar = c(1, 1, 1, 1))
 
 circos.par("gap.degree" = 0, "cell.padding" = c(0, 0, 0, 0), "start.degree" = 90)
 circos.initialize(factors = factors, xlim = c(0, 12))

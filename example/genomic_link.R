@@ -1,6 +1,5 @@
 library(circlize)
 
-par(mar = c(1, 1, 1, 1))
 bed1 = generateRandomBed(nr = 100)
 bed1 = bed1[sample(nrow(bed1), 20), ]
 bed2 = generateRandomBed(nr = 100)

@@ -7,7 +7,6 @@
 </head><body><p><img src='smooth.jpg' style='width:1000px;height:1000px'></p><p><a href='smooth.pdf'>download PDF</a></p>
 <p id='comment'></p>
 <p id='code'><pre><code>library(circlize)
-par(mar = c(1, 1, 1, 1))
 factors = letters[1:4]
 circos.initialize(factors, xlim = c(0, 1))
 circos.trackPlotRegion(ylim = c(-3, 3), track.height = 0.4, panel.fun = function(x, y) {

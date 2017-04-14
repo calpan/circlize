@@ -1,8 +1,6 @@
 
 library(circlize)
 
-par(mar = c(1, 1, 1, 1))
-
 load(paste(system.file(package = "circlize"), "/extdata/DMR.RData", sep=""))
 
 # rainfall

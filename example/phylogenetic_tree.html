@@ -15,7 +15,6 @@ n = length(labels)
 hc = as.dendrogram(hc)
 
 library(circlize)
-par(mar = c(1, 1, 1, 1))
 circos.par(cell.padding = c(0, 0, 0, 0))
 circos.initialize("a", xlim = c(0, n))
 maxy = attr(hc, "height")

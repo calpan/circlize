@@ -1,8 +1,6 @@
 
 library(circlize)
 
-par(mar = c(1, 1, 1 ,1))
-
 load(paste0(system.file(package = "circlize"), "/extdata/tp_family.RData"))
 df = data.frame(gene = names(tp_family),
                 start = sapply(tp_family, function(x) min(unlist(x))),

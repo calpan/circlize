@@ -1,9 +1,9 @@
 library(circlize)
-par(mar = c(1, 1, 1, 1), cex = 0.6)
+par(cex = 0.6)
 factors = letters[1:9]
 circos.par(points.overflow.warning = FALSE)
 circos.initialize(factors = factors, xlim = c(0, 10))
-circos.trackPlotRegion(factors = factors, ylim = c(0, 10), track.height = 0.5)
+circos.track(factors = factors, ylim = c(0, 10), track.height = 0.5)
 
 circos.lines(sort(runif(10)*10), runif(10)*8, sector.index = "a")
 circos.text(5, 9, "type = 'l'", sector.index = "a", facing = "outside")

@@ -8,15 +8,14 @@
 <p id='comment'></p>
 <p id='code'><pre><code>library(circlize)
 
-par(mar = c(1, 1, 1, 1))
 factors = letters[1:8]
 circos.par(points.overflow.warning = FALSE)
 circos.initialize(factors = factors, xlim = c(0, 10))
-circos.trackPlotRegion(factors = factors, ylim = c(0, 10), track.height = 0.1, bg.border = NA, panel.fun = function(x, y) {
+circos.track(factors = factors, ylim = c(0, 10), track.height = 0.1, bg.border = NA, panel.fun = function(x, y) {
     circos.text(5, 10, get.cell.meta.data("sector.index"))
 })
 
-circos.trackPlotRegion(factors = factors, ylim = c(0, 10))
+circos.track(factors = factors, ylim = c(0, 10))
 circos.axis(labels.niceFacing = FALSE, sector.index = "a")
 circos.axis(labels.niceFacing = FALSE, sector.index = "b", direction = "inside", labels.facing = "outside")
 circos.axis(labels.niceFacing = FALSE, sector.index = "c", h = "bottom")

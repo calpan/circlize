@@ -25,15 +25,15 @@ brand_color = structure(2:4, names = unique(brand))
 model_color = structure(2:8, names = names(brand))
 
 library(circlize)
-gap.degree = do.call("c", lapply(table(brand), function(i) c(rep(2, i-1), 8)))
-circos.par(gap.degree = gap.degree)
+gap.after = do.call("c", lapply(table(brand), function(i) c(rep(2, i-1), 8)))
+circos.par(gap.after = gap.after, cell.padding = c(0, 0, 0, 0))
 
 chordDiagram(df[, c(2, 4)], order = names(brand), grid.col = model_color,
     directional = 1, annotationTrack = "grid", preAllocateTracks = list(
         list(track.height = 0.02))
 )
 
-circos.trackPlotRegion(track.index = 2, panel.fun = function(x, y) {
+circos.track(track.index = 2, panel.fun = function(x, y) {
     xlim = get.cell.meta.data("xlim")
     ylim = get.cell.meta.data("ylim")
     sector.index = get.cell.meta.data("sector.index")

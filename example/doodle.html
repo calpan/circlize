@@ -11,7 +11,6 @@ library(circlize)
 library(jpeg)
 library(RCurl)
 
-par(mar = c(1, 1, 1, 1))
 circos.par("cell.padding" = c(0, 0, 0, 0))
 circos.initialize(factors = letters[1:16], xlim = c(0, 1))
 
@@ -51,7 +50,8 @@ for(fi in 1:4) {
                 col = rgb(img2[nr2-i+1,j,1], img2[nr2-i+1,j,2], img2[nr2-i+1,j,3])
         
                 if(col != "#FFFFFF") {
-                    circos.rect((j-w/2)/nc2, (i-w/2)/nr2, (j+w/2)/nc2, (i+w/2)/nr2, col=col, border=col, sector.index = letters[(i_sum %% 16) + 1], track.index = floor(i_sum / 16)+1)
+                    circos.rect((j-w/2)/nc2, (i-w/2)/nr2, (j+w/2)/nc2, (i+w/2)/nr2, col=col, border=col, 
+                        sector.index = letters[(i_sum %% 16) + 1], track.index = floor(i_sum / 16)+1)
                 }
                 
             }

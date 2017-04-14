@@ -3,7 +3,7 @@
 
 library(circlize)
 
-par(bg = "black", mar = c(1, 1, 1, 1))
+par(bg = "black")
 
 factors = 1:36
 circos.par(cell.padding = c(0, 0, 0, 0), track.margin = c(0, 0), gap.degree = 0)

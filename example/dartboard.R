@@ -1,7 +1,6 @@
 library(circlize)
 
 factors = 1:20
-par(mar = c(1, 1, 1, 1))
 circos.par("gap.degree" = 0, "cell.padding" = c(0, 0, 0, 0),
     start.degree = 360/40, track.margin = c(0, 0), "clock.wise" = FALSE)
 circos.initialize(factors = factors, xlim = c(0, 1))

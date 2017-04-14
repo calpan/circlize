@@ -1,6 +1,4 @@
 library(circlize) 
-
-par(mar = c(1, 1, 1, 1))
     
 circos.par("start.degree" = 150, "gap.degree" = c(240), "cell.padding" = c(0, 0, 0, 0))
 circos.initializeWithIdeogram(chromosome.index = "chr1")

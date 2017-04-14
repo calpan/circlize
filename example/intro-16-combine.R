@@ -3,9 +3,8 @@ factors = sample(letters[1:6], 100, replace = TRUE)
 x = rnorm(100)
 y = rnorm(100)
 
-par(mar = c(1, 1, 1, 1))
 circos.initialize(factors = factors, x = x)
-circos.trackPlotRegion(factors = factors, x = x, y = y, bg.col = "#EEEEEE",
+circos.track(factors = factors, x = x, y = y, bg.col = "#EEEEEE",
     bg.border = NA, track.height = 0.4, panel.fun = function(x, y) {
     
     cell.xlim = get.cell.meta.data("cell.xlim")

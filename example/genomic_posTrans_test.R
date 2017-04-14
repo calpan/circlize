@@ -1,7 +1,5 @@
 library(circlize)
 
-par(mar = c(1, 1, 1, 1))
-
 circos.initializeWithIdeogram()
 
 bed = generateRandomBed(nr = 20, nc = 0)

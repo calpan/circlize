@@ -1,7 +1,5 @@
 library(circlize)
 
-par(mar = c(1, 1, 1 ,1))
-
 circos.initializeWithIdeogram(plotType = NULL)
 
 circos.trackPlotRegion(ylim = c(0, 1), panel.fun = function(x, y) {
